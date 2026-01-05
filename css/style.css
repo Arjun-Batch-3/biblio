@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+.header {
+  background-color: #9c94bf00;/* This is a blue color */
+}
+
+body{
+  background: hsla(239, 100%, 67%, 1);
+
+background: linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#595CFF", endColorstr="#C6F8FF", GradientType=1 );
+color: rgb(36, 65, 138);
+font-family: "Inter", sans-serif;
+}
+
+
+
+/* 
+Edit button color/ also can be taken from inspect
+:root {
+  --bs-primary: #9b30ff;   
+  --bs-secondary: #800080; 
+  --bs-success: #9370db;   
+  --bs-info: #8a2be2;      
+  --bs-warning: #dda0dd;   
+  --bs-danger: #9932cc;    
+}
+.btn-outline-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+.btn-secondary {
+  background-color: var(--bs-secondary) !important;
+  border-color: var(--bs-secondary) !important;
+} */
+
+
+/* primary border for all */
+.border-primary {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-purple-rgb), var(--bs-border-opacity)) !important;
+}
+
+.table {
+  --bs-table-color-type: initial;
+  --bs-table-bg-type: initial;
+  --bs-table-color-state: initial;
+  --bs-table-bg-state: initial;
+  --bs-table-color: rgb(0, 0, 0);
+  --bs-table-bg: #c7e5ff;
+  --bs-table-border-color: #9cafc5 ;
+  --bs-table-accent-bg: transparent;
+  --bs-table-striped-color: rgb(173 104 247);
+  --bs-table-striped-bg: rgba(rgb(84, 27, 145), 0.05);
+  --bs-table-active-color: rgb(173 104 247);
+  --bs-table-active-bg: rgba(rgb(81, 21, 146), 0.1);
+  --bs-table-hover-color: rgb(173 104 247);
+  --bs-table-hover-bg: rgba(rgb(90, 27, 158), 0.075);
+  width: 100%;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  border-color: var(--bs-table-border-color);
+}
+.card {
+  --bs-card-bg: #c7e5ff;
+  --bs-card-color: rgb(0, 0, 0);
+}
+
+/* styles for index requst book review slider */
+#request-slider-body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.request-slider{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+.request-slider-item{
+  position: absolute;
+  width: 250px;
+  height: 450px;
+  text-align: justify;
+  background-color: #fff;
+  /* border: 1px solid #000; */
+  box-shadow: 0 0 20px #3d50bb, 0 0 20px #354a99, 0 0 20px #2c3895;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.5s;
+  left: calc(50% - 110px);
+  top: 0;
+  font-size: smaller;
+  line-height: normal;
+}
+#next, #prev{
+  position: absolute;
+  top: 40%;
+  color: #274e77;
+  background-color: transparent;
+  border: none;
+  font-size: xxx-large;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+#prev{
+  left: 50px;
+}
+
+#next{
+  right: 50px;
+}
+
+
+
+/* styles for index review slider */
+#request-slider-parent{
+  background-color: #ffffffb0;
+}
+
+#review-slider-parent{
+  border:1px solid rgb(28, 28, 75);
+  background-color: #ffffffb0;
+}
+
+#review-slider-body{  
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review-slider{
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+.review-slider-item{
+  position: absolute;
+  width: 370px;
+  height: 610px;
+  text-align: justify;
+  background-color: #fff;
+  /* border: 1px solid #000; */
+  box-shadow: 0 0 20px #3d50bb, 0 0 20px #354a99, 0 0 20px #2c3895;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.5s;
+  left: calc(50% - 190px);
+  top: 0;
+  font-size: 12px;
+  line-height: normal;
+}
+#next2, #prev2{
+  position: absolute;
+  bottom: 5px;
+  color: #274e77;
+  background-color: transparent;
+  border: none;
+  font-size: xxx-large;
+  font-family: monospace;
+  font-weight: bold;
+  left: 42%;
+}
+#next2{
+  left: unset;
+  right: 42%;
+}
+#pause2{
+  position: absolute;
+  bottom: -3px;
+  color: #274e77;
+  background-color: transparent;
+  border: none;
+  font-size: xxx-large;
+  left: 48%;
+}
+
+.btn:not(.btn-outline-danger):not(.btn-outline-info):not(.btn-outline-warning){
+  color: #000 !important;
+  border-color:  #000;
+}
+
+.btn:not(.btn-outline-danger):not(.btn-outline-info):not(.btn-outline-warning):hover{
+  background-color: #1989c1!important;
+  color: #fff !important;
+}
+
+.btn:not(.btn-outline-danger):not(.btn-outline-info):not(.btn-outline-warning).active{
+  background-color: #1989c1!important;
+  color: #fff !important;
+}
+
+footer{
+  background-color: #c7f8ff68;
+  padding: 1rem;
+}
+
+footer a{
+  color: #ffffff !important;
+  border: 1px solid transparent !important;
+  border-radius: 5px;
+  padding: 0.4rem 1rem;
+  transition: all 10ms ease;
+}
+
+footer a:hover{
+  background-color: #274e77;
+  border-color: #ffffff !important;
+}
+
+footer p{
+  color: #ffffff;
+}
+.dropdown-item:focus, .dropdown-item:hover, .dropdown-item.active{
+  background-color: #3a79b4 !important;
+  color: #fff;
+}
+
+#logo{
+  color: #274e77 !important;
+  font-family: "Fascinate Inline", system-ui;
+}
+
+
+.quiz{
+  border-radius: 5px;
+  background-color: transparent !important;
+  height: 70svh;
+  display: grid;
+  align-items: center;
+}
+
+.quiz button{
+  color: #d9d9d9;
+  border: none;
+  background-color: #442378;
+  padding: 0.3rem 0.8rem ;
+  border-radius: 10px;
+  transition: all 100ms ease-in;
+}
+
+.quiz button:hover{
+  color: #fff;
+  box-shadow: 0 0px 8px #ffffffc2;  
+}
+
+
+.search select, .search input[name="search"]{
+  background-color: #ffffff !important;
+  color: #678ac5 !important;
+}
+
+
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 50ms ease-in;
+  visibility: visible;
+}
+
+[data-title]:after {
+  content: attr(data-title);
+  background-color: #d8d8d8;
+  color: #111;
+  font-size: 0.8rem;
+  position: absolute;
+  padding: 0.1rem 0.2rem;
+  border-radius: 5px;
+  bottom: -2.0em;
+  left: 0%;
+  white-space: nowrap;
+  box-shadow: 1px 1px 3px #222222;
+  opacity: 0;
+  border: 1px solid #111111;
+  z-index: 99999;
+  visibility: hidden;
+}
+
+[data-title] {
+  position: relative;
+}
+
+.old-post{
+  min-height: 75svh;
+}
+
+.btn.disabled{
+  background-color: #686868;
+  color: #ababab !important;
+}
+
+/* custom button */
+.primaryBtn{
+  background-color: transparent;
+  color: #0a0636;
+  border: 1px solid #0a0636;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.primaryBtn:hover, .primaryBtn:active{
+  background-color: #0a0636;
+  box-shadow: 0 0 10px #deacf5, 0 0 10px #deacf5, 0 0 10px #deacf5;
+  /* box-shadow: 0 0 10px #BC13FE, 0 0 10px #BC13FE, 0 0 10px #BC13FE, 0 0 10px #BC13FE; */
+  color: #fff;
+} 
+.secondaryBtn{
+  background-color: transparent;
+  color: #b520e2;
+  border: 1px solid #b520e2;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 50ms ease-in;
+}
+.secondaryBtn:hover, .secondaryBtn:active{
+  background-color: #b520e2;
+  /* box-shadow: 0 0 10px #deacf5, 0 0 10px #deacf5, 0 0 10px #deacf5; */
+  /* box-shadow: 0 0 10px #FF6EC7, 0 0 10px #FF6EC7, 0 0 10px #FF6EC7, 0 0 10px #FF6EC7; */
+  color: #fff;
+} 
+.optionalBtn{
+  background-color: transparent;
+  color: #2323ff;
+  border: 1px solid #2323ff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.optionalBtn:hover, .optionalBtn:active{
+  background-color: #2323ff;
+  /* box-shadow: 0 0 10px #deacf5, 0 0 10px #deacf5, 0 0 10px #deacf5; */
+  /* box-shadow: 0 0 10px #FF6EC7, 0 0 10px #FF6EC7, 0 0 10px #FF6EC7, 0 0 10px #FF6EC7; */
+  color: #fff;
+} 
+.mainBtn{
+  background-color: transparent;
+  color: #28104e;
+  border: 1px solid #28104e;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.mainBtn:hover, .mainBtn:active{
+  background-color: #28104e;
+  box-shadow: 0 0 10px #deacf5, 0 0 10px #deacf5, 0 0 10px #deacf5;
+  /* box-shadow: 0 0 10px #FF6EC7, 0 0 10px #FF6EC7, 0 0 10px #FF6EC7, 0 0 10px #FF6EC7; */
+  color: #fff;
+}
+/* custom button end */
+
+
+.btn:not(.btn-outline-danger):not(.btn-outline-info):not(.btn-outline-warning){
+  color: #000 !important;
+  border-color:  #000;
+}
+
+.btn:not(.btn-outline-danger):not(.btn-outline-info):not(.btn-outline-warning):hover{
+  background-color: #1989c1!important;
+  color: #fff !important;
+}
+
+.btn:not(.btn-outline-danger):not(.btn-outline-info):not(.btn-outline-warning).active{
+  background-color: #1989c1!important;
+  color: #fff !important;
+}
+
+
+/* book fest scrollbar */
+/* Custom scrollbar for Chrome, Safari, and Opera */
+.scrollable-area::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.scrollable-area::-webkit-scrollbar-thumb {
+  background-color: #3a2c86; /* Scrollbar color */
+  border-radius: 10px;     /* Rounded corners */
+}
+
+.scrollable-area::-webkit-scrollbar-thumb:hover {
+  background-color: #3a2c86; /* Hover color */
+}
+
+/* Custom scrollbar for Firefox */
+.scrollable-area {
+  scrollbar-color: #3a2c86 #373e7e59; /* Thumb color and track color */
+  scrollbar-width: thin;         /* Scrollbar width */
+}
+/* book fest scrollbar ends*/
+
+.bid-btn{
+  gap: 1rem;
+}
+
+.bid-btn > *{
+  flex: 1 ;
+}
+
+.btn-outline-danger{
+  border: 1px solid black !important;
+  color: #000;
+  transition: all 10ms ease;
+}
+
+.btn-outline-danger:hover{
+  border-color: red !important;
+}
